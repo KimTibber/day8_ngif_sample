@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>로그인</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label fixed>사용자 이름</ion-label>
+            <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>비밀번호</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button (click)="login()">로그인!</button>
+</ion-content>
